@@ -68,7 +68,7 @@ public class Libro extends Escrito{
 
 
 	public int palabrasTotales(int palabrasTotales) {
-		return palabrasTotales*2;
+		return palabrasTotales*2*getPaginas();
 	}
 	
 	public String interpretacion() {
@@ -82,8 +82,8 @@ public class Libro extends Escrito{
 				"\n" + getPaginas()+
 				"\n" + getCo_autor()+
 				"\n" + getEditorial()+
-				"\n" + getEdicion()+
-				"\n" + getInterpretacion()+"";
+				"\n" + getEdicion()+"";
+				
 	}
 
 }

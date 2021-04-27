@@ -50,10 +50,12 @@ public class Alfabeto extends Pictograma{
 	
 	public String toString() {
 		String a = "";
+		String b = "";
 		for(String i : letras) {
 			a +=  i + ", ";
+			b = a.substring(0, a.length()-2);
 		}
-		return a;
+		return b;
 	}
 
 }

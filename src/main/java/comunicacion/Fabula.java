@@ -28,7 +28,7 @@ public class Fabula extends Escrito {
 	}
 	
 	public int palabrasTotales(int palabrasTotales) {
-		return palabrasTotales*1;
+		return palabrasTotales*1*getPaginas();
 	}
 
 	/*@Override
@@ -45,13 +45,13 @@ public class Fabula extends Escrito {
 		return interpretacion;
 	}
 	
-	public  String toString() {
+	public String toString() {
 		return "" + getOrigen()+
 				"\n" + getTitulo()+
 				"\n" + getAutor()+
 				"\n" + getPaginas()+
-				"\n" + getEnsenanza()+
-				"\n" + getInterpretacion()+"";
+				"\n" + getEnsenanza()+ "";
+				
 	}
 
 }

@@ -38,7 +38,7 @@ public class Periodico extends Escrito {
 	}
 	
 	public int palabrasTotales(int palabrasTotales) {
-		return palabrasTotales*10;
+		return palabrasTotales*10*getPaginas();
 	}
 	
 	public String interpretacion() {
@@ -51,8 +51,8 @@ public class Periodico extends Escrito {
 				"\n" + getAutor()+
 				"\n" + getPaginas()+
 				"\n" + getFecha()+
-				"\n" + getPrimicia()+
-				"\n" + getInterpretacion()+"";
+				"\n" + getPrimicia()+"";
+				
 	}
 
 
