@@ -24,13 +24,17 @@ public class MainClass {
 				new String [] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"},
 				"Alfabeto latino");
 		Libro libro = new Libro("Creacion", "El resplandor", "Stephen King", 599, "N/A", "Doubleday", "Primera", "Escrito largo");
+		Tesis tesis = new Tesis("Pensamiento expansivo", "Recomendador", "Alejandro", 20, "Recomendar asignaturas", new String [] {"Primero", "Segundo"},
+				"Se hace trabajo futuro", "[1] Maquinaria",  "Escrito investigativo");
 		
 		//System.out.println(fabula.toString());
 		//System.out.println(periodico.toString());
 		//System.out.println(alfabeto.toString());
 		//System.out.println(libro.toString());
-		System.out.println(fabula.interpretacion());
-		System.out.println(libro.palabrasTotales(140));
+		//System.out.println(fabula.interpretacion());
+		//System.out.println(libro.palabrasTotales(140));
+		System.out.println(tesis.toString());
+		//System.out.println(tesis.getArgumentos());
 		
 		String comp = "pensamiento\n" +
 				"La tortuga y la liebre\n" + 

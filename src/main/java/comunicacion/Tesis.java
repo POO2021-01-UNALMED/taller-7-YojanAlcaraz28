@@ -28,16 +28,6 @@ public class Tesis extends Escrito {
 		this.idea = idea;
 	}
 
-	/*public static ArrayList<Tesis> getArgumentos() {
-		return argumentos;
-	}
-
-	public static void setArgumentos(ArrayList<Tesis> argumentos) {
-		Tesis.argumentos = argumentos;
-	}*/
-	
-	
-
 	public String getConclusion() {
 		return conclusion;
 	}
@@ -80,21 +70,19 @@ public class Tesis extends Escrito {
 		return interpretacion;
 	}
 	
+	public String interpretacion() {
+		return interpretacion;
+	}
 	public String toString() {
 		return "" + getOrigen()+
 				"\n" + getTitulo()+
 				"\n" + getAutor()+
 				"\n" + getPaginas()+
-				"\n" + getArgumentos()+
+				"\n" + getIdea()+
+				"\n" + getArgumentos().length+
 				"\n" + getConclusion()+
 				"\n" + getReferencias()+"";
 				
 	}
 
-
-	
-	public String interpretacion() {
-		return interpretacion;
-		
-	}
 }
